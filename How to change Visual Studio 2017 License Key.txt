@@ -1,0 +1,9 @@
+- The following steps work:
+
+1- Remove the registry key containing the license information: HKCR\Licenses\5C505A59-E312-4B89-9508-E162F8150517
+
+2- If you can't find the key, use sysinternals ProcessMonitor to check the registry access of VS2017 to locate the correct key which is always in HKEY_CLASSES_ROOT\Licenses
+
+3- After you remove this key, VS2017 will tell you that it's license information is incorrect. Go to "Programs and features" and repair VS2017.
+
+4- After the repair, VS2017 is reverted to a 30 day trial and you can enter a new product key. This could also be used to stay in a trial version loop and never enter a producy key.
